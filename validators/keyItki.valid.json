@@ -1,0 +1,7 @@
+{
+  "name": "keyItki",
+  "caption": "Идентификатор ИТКИ",
+  "assignByContainer": null,
+  "validationExpression": null,
+  "mask": "ХБР-XX-99999999999"
+}

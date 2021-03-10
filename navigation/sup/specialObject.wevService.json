@@ -1,0 +1,13 @@
+{
+  "code": "specialObject.wevService",
+  "type": 1,
+  "caption": "Веб-сервисы",
+  "classname": "webService",
+  "container": null,
+  "collection": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "title": "",
+  "metaVersion": "2.0.0"
+}

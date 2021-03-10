@@ -1,0 +1,16 @@
+{
+  "code": "spravochniki.statusGK",
+  "orderNumber": 150,
+  "type": 1,
+  "title": "Статус контракта (договора)",
+  "caption": "Статус контракта",
+  "classname": "statusGK",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

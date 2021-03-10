@@ -1,0 +1,90 @@
+{
+  "name": "conventionIS",
+  "caption": "Согласование ИС",
+  "wfClass": "informationSystem",
+  "startState": "notYchet",
+  "states": [
+    {
+      "name": "notYchet",
+      "caption": "Не стоит на учете",
+      "maxPeriod": null,
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "check",
+      "caption": "Проверка сведений",
+      "maxPeriod": null,
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "placement",
+      "caption": "Размещение сведений в ИИСУС",
+      "maxPeriod": null,
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    }
+  ],
+  "transitions": [
+    {
+      "name": "inAlignment",
+      "caption": "На согласование",
+      "startState": "notYchet",
+      "finishState": "check",
+      "signBefore": false,
+      "signAfter": false,
+      "roles": [],
+      "assignments": [
+        {
+          "key": "statusCheck",
+          "value": "Проверка сведений"
+        }
+      ],
+      "conditions": []
+    },
+    {
+      "name": "infoTrue",
+      "caption": "Сведения верны",
+      "startState": "check",
+      "finishState": "placement",
+      "signBefore": false,
+      "signAfter": false,
+      "roles": [],
+      "assignments": [
+        {
+          "key": "statusCheck",
+          "value": "Стоит на учете"
+        },
+        {
+          "key": "dateReg",
+          "value": "now()"
+        }
+      ],
+      "conditions": []
+    },
+    {
+      "name": "infoFalse",
+      "caption": "Сведения не верны",
+      "startState": "check",
+      "finishState": "notYchet",
+      "signBefore": false,
+      "signAfter": false,
+      "roles": [],
+      "assignments": [
+        {
+          "key": "statusCheck",
+          "value": "Доработка сведений"
+        }
+      ],
+      "conditions": []
+    }
+  ],
+  "metaVersion": "2.0.61.15690"
+}

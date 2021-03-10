@@ -1,0 +1,16 @@
+{
+  "code": "spravochniki.servPO",
+  "orderNumber": 130,
+  "type": 1,
+  "title": "",
+  "caption": "Серверное ПО",
+  "classname": "servPO",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

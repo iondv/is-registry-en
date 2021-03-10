@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.costPeriod",
+  "orderNumber": 100,
+  "type": 1,
+  "title": "",
+  "caption": "Период затрат",
+  "classname": "costPeriod",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

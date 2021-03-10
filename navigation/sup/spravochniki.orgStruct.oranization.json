@@ -1,0 +1,16 @@
+{
+  "code": "spravochniki.orgStruct.oranization",
+  "orderNumber": 100,
+  "type": 1,
+  "title": "",
+  "caption": "Организации",
+  "classname": "organization",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

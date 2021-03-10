@@ -1,0 +1,15 @@
+{
+    "code": "spravochniki.orgStruct",
+    "type": 0,
+    "caption": "Организационная структура",
+    "tooltip": "Орг. структура",
+    "classname": null,
+    "orderNumber": 5,
+    "container": null,
+    "collection": null,
+    "conditions": [],
+    "sorting": [],
+    "pathChains": [],
+    "title": "",
+    "metaVersion": "2.0.0"
+}

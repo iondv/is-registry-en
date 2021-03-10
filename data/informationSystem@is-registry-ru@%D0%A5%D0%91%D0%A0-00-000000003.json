@@ -1,0 +1,31 @@
+{
+  "code": "ИС-00-000000003",
+  "classCategory": "26",
+  "statusCheck": "Не стоит на учете",
+  "active": false,
+  "personUchet": [],
+  "verify": false,
+  "fullName": "Информационная система \"Легенда\"",
+  "name": "Информационная система \"Легенда\"",
+  "appointment": "Автоматизация процесса описания\n",
+  "operator": "00222111000",
+  "industry": "health",
+  "type": "gos",
+  "_class": "informationSystem@is-registry-ru",
+  "_classVer": "20160916",
+  "___workflowStatus": {
+    "conventionIS@is-registry-ru": {
+      "next": {
+        "inAlignment": {
+          "name": "inAlignment",
+          "caption": "На согласование",
+          "signBefore": false,
+          "signAfter": false
+        }
+      },
+      "workflowCaption": "Согласование ИС",
+      "stageCaption": "Не стоит на учете",
+      "stage": "notYchet"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "code": "ИС-00-000000002",
+  "classCategory": "26",
+  "statusCheck": "Не стоит на учете",
+  "active": false,
+  "personUchet": [],
+  "verify": false,
+  "fullName": "Региональная информационная система льготного обеспечения",
+  "name": "Региональная информационная система льготного обеспечения",
+  "appointment": "Автоматизация выписки и отпуска изделий для льготников края\n",
+  "operator": "000011004400",
+  "industry": "health",
+  "type": "gos",
+  "_class": "informationSystem@is-registry-ru",
+  "_classVer": "20160916",
+  "___workflowStatus": {
+    "conventionIS@is-registry-ru": {
+      "next": {
+        "inAlignment": {
+          "name": "inAlignment",
+          "caption": "На согласование",
+          "signBefore": false,
+          "signAfter": false
+        }
+      },
+      "workflowCaption": "Согласование ИС",
+      "stageCaption": "Не стоит на учете",
+      "stage": "notYchet"
+    }
+  }
+}

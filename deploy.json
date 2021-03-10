@@ -1,0 +1,278 @@
+{
+  "parametrised": true,
+  "namespace": "is-registry-ru",
+  "globals": {
+    "moduleTitles": {
+      "registry": "Система управления проектами",
+      "report": "Отчеты"
+    },
+    "plugins": {
+      "actualAclProvider": {
+        "module": "core/impl/access/DsAcl",
+        "initMethod": "init",
+        "initLevel": 1,
+        "options": {
+          "dataSource": "ion://Db"
+        }
+      },
+      "aclProvider": {
+        "module": "core/impl/access/aclMetaMap",
+        "options": {
+          "dataRepo": "ion://dataRepo",
+          "acl": "ion://actualAclProvider",
+          "accessManager": "ion://roleAccessManager",
+          "calculator": "ion://calculator",
+          "map": {
+            "person@is-registry-ru": {
+              "isEntry": true,
+              "sidAttribute": "user",
+              "jumps": [
+                "employee"
+              ]
+            },
+            "employee@is-registry-ru": {
+              "sidAttribute": "id",
+              "jumps": [
+                "organization",
+                "person",
+                "assistant"
+              ]
+            },
+            "organization@is-registry-ru": {
+              "sidAttribute": "INN",
+              "jumps": [
+                "headOrg"
+              ]
+            }
+          }
+        }
+      },
+      "dataRepo": {
+        "options": {
+          "maxEagerDepth": 4
+        }
+      },
+      "customProfile": {
+        "module": "lib/plugins/customProfile",
+        "options": {
+          "metaRepo": "ion://metaRepo",
+          "dataRepo": "ion://dataRepo",
+          "fields": {
+            "surname": {
+              "caption": "Фамилия",
+              "required": false,
+              "readonly": true
+            },
+            "name": {
+              "caption": "Имя",
+              "required": false,
+              "readonly": true
+            },
+            "patronymic": {
+              "caption": "Отчество",
+              "required": false,
+              "readonly": true
+            },
+            "birthDate": {
+              "caption": "Дата рождения",
+              "required": false,
+              "readonly": true,
+              "type": 120
+            },
+            "createDatet": {
+              "caption": "Метка времени создания",
+              "required": false,
+              "readonly": true,
+              "type": 6
+            },
+            "modifeDate": {
+              "caption": "Метка времени изменения",
+              "required": false,
+              "readonly": true,
+              "type": 6
+            },
+            "creator": {
+              "caption": "Создан пользователем",
+              "required": false,
+              "readonly": true
+            },
+            "editor": {
+              "caption": "Изменен пользователем",
+              "required": false,
+              "readonly": true
+            }
+          },
+          "propertyMap": {
+            "person@is-registry-ru": {
+              "filter": "user",
+              "properties": {
+                "person": "id",
+                "surname": "surname",
+                "name": "name",
+                "patronymic": "patronymic"
+              }
+            },
+            "employee@is-registry-ru": {
+              "filter": "person.user",
+              "properties": {
+                "employee": "id",
+                "organization": "organization.INN"
+              }
+            }
+          }
+        }
+      },
+      "accounts": {
+        "options": {
+          "plugins": {
+            "customProfile": "ion://customProfile"
+          }
+        }
+      },
+      "securedDataRepo": {
+        "options": {
+          "accessManager": "ion://roleAccessManager",
+          "roleMap": {
+            "informationSystem@is-registry-ru": {
+              "IS_OWNER": {
+                "caption": "Сотрудники организации",
+                "resource": {
+                  "id": "is-registry-ru::is"
+                },
+                "sids": [
+                  "$operator",
+                  "$personUchet"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "deployer": "built-in",
+  "modules": {
+    "registry": {
+      "globals": {
+        "inlineForm": true,
+        "di": {
+          "pmListToDocx": {
+            "module": "modules/registry/export/listToDocx",
+            "initMethod": "init",
+            "initLevel": 0,
+            "options": { 
+              "tplDir": "applications/is-registry-ru/export/list",
+              "injectors": []
+            }
+          },
+          "pmItemToDocx": {
+            "module": "modules/registry/export/itemToDocx",
+            "initMethod": "init",
+            "initLevel": 0,
+            "options": { 
+              "tplDir": "applications/is-registry-ru/export/item",
+              "injectors": []
+            }
+          },
+          "export": {
+            "options": {
+              "configs": {
+                "informationSystem@is-registry-ru": {
+                  "listIs": {
+                    "caption": "Список информационных систем",
+                    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "extension": "docx",
+                    "type": "list",
+                    "preprocessor": "ion://pmListToDocx",
+                    "eagerLoading": [],
+                    "fileNameTemplate": "Список информационных систем.${list.name}",
+                    "isBackground": false 
+                  },
+                  "itemIs": {
+                    "caption": "Паспорт информационной системы",
+                    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "extension": "docx",
+                    "type": "item",
+                    "preprocessor": "ion://pmItemToDocx",
+                    "eagerLoading": [
+                      "owner",
+                      "owner.person",
+                      "customer",
+                      "operator",
+                      "personUchet",
+                      "participants",
+                      "participants.organization"
+                    ],
+                    "fileNameTemplate": "Паспорт информационной системы.${item.name}",
+                    "isBackground": false 
+                  }
+                }
+              }
+            }
+          }                   
+        },
+        "storage": {
+          "document@is-registry-ru": {
+            "file": "/${class}/example_${attr}/${dddd}/"
+          },
+          "gk@is-registry-ru": {
+            "fileZ": "/${class}/example_${attr}/${dddd}/",
+            "fileEx": "/${class}/example_${attr}/${dddd}/"
+          },
+          "zakupka@is-registry-ru": {
+            "docZakupki": "/${class}/example_${attr}/${dddd}/",
+            "docProtocol": "/${class}/example_${attr}/${dddd}/"
+          }
+        }
+      }
+    },
+    "report": {
+      "globals": {
+        "namespaces": {
+          "is-registry-ru": "Система управления проектами"
+        },
+        "defaultNav": {
+          "namespace": "is-registry-ru",
+          "mine": "classInfoSystem",
+          "report": "classificationIS"
+        },
+        "mineBuilders": {
+          "is-registry-ru": {
+            "classification": {
+              "infoSystem": "mineBuilder",
+              "classInfoSystem": "mineBuilder"
+            }
+          }
+        }
+      },
+      "import": {
+        "src": "applications/is-registry-ru/bi",
+        "namespace": "is-registry-ru"
+      }
+    },
+    "ionadmin": {
+      "globals": {
+        "defaultPath": "ionadmin",
+        "securityParams": {
+          "resourceTypes": {
+            "*": {
+              "title": "Общие"
+            },
+            "n:::": {
+              "title": "Навигация"
+            },
+            "c:::": {
+              "title": "Классы"
+            },
+            "ionadmin:::": {
+              "title": "Модуль администрирования"
+            },
+            "sys:::url": {
+              "title": "Пути"
+            }
+          }
+        }
+      }
+    }   
+  }
+}

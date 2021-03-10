@@ -1,0 +1,7 @@
+{
+  "name": "keyIs",
+  "caption": "Идентификатор ИС",
+  "assignByContainer": false,
+  "validationExpression": null,
+  "mask": "ХБР-XX-999999999"
+}

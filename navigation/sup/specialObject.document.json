@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.document",
+  "orderNumber": 130,
+  "type": 1,
+  "title": "",
+  "caption": "Проектные документы",
+  "classname": "document",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

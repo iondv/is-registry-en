@@ -1,0 +1,119 @@
+name: classification
+caption: Классификация ИС
+sources:
+  - name: infoSystem
+    caption: Информационная система
+    load:
+      - className: informationSystem
+        results:
+          - field: code
+            expr: $code
+          - field: date
+            expr: $dateReg
+          - field: class
+            expr:
+              if:
+                - eq:
+                  - $classCategory
+                  - "10"
+                - 'ИС обеспечения специальной деятельности'
+                - if:
+                  - eq:
+                    - $classCategory
+                    - "23"
+                  - 'Управление финансами'
+                  - if:
+                    - eq:
+                      - $classCategory
+                      - "22"
+                    - 'Управление персоналом'
+                    - if:
+                      - eq:
+                        - $classCategory
+                        - "24"
+                      - 'Управление материальными и не материальными активами'
+                      - if:
+                        - eq:
+                          - $classCategory
+                          - "25"
+                        - 'Организация информационного взаимодействия'
+                        - if:
+                          - eq:
+                            - $classCategory
+                            - "21"
+                          - 'Документарное обеспечение деятельности'
+                          - if:
+                            - eq:
+                              - $classCategory
+                              - "26"
+                            - 'Системы информационного обеспечения деятельности'
+                            - if:
+                              - eq:
+                                - $classCategory
+                                - "27"
+                              - 'Прочее'
+                              - 'Категория не задана'
+          - field: name
+            expr: $fullName
+          - field: owner
+            expr: 
+              concat:
+                - $owner.person.surname
+                - ' '
+                - $owner.person.name
+                - ' '
+                - $owner.person.patronymic
+                - ', '
+                - $owner.position
+    index:
+      - code
+  - name: classInfoSystem
+    caption: Классификация информационных систем
+    load:
+      - source: infoSystem
+        joins:
+          - table: code
+            alias: co
+            left: code
+            right: code
+        results:
+          - field: code
+            expr: $code
+          - field: date
+            expr: $date
+          - field: class
+            expr: $class
+          - field: name
+            expr: $name
+          - field: owner
+            expr: $owner  
+reports:
+  - name: classificationIS
+    caption: Классификация ИС
+    sheets:
+      - name: classificationIS
+        caption: Классификация информационных систем
+        type: aggregation
+        source: classInfoSystem
+        fetch:
+          class: $class
+          code: $code
+          date: $date
+          name: $name
+          owner: $owner
+        columns:
+          - field: class
+            caption: Классификационная категория
+            filter: true
+          - field: code
+            caption: Идентификационный номер ОУ
+          - field: date
+            caption: Дата регистрации
+            format: date
+          - field: name
+            caption: Полное наименование
+          - field: owner
+            caption: Оператор
+        groups:
+          fields:
+            - class

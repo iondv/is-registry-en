@@ -1,0 +1,84 @@
+{
+  "columns": [
+    {
+      "sorted": true,
+      "caption": "Статус",
+      "type": 1,
+      "property": "name",
+      "size": null,
+      "maskName": null,
+      "mask": null,
+      "mode": null,
+      "fields": [],
+      "columns": [],
+      "actions": null,
+      "orderNumber": 20,
+      "required": false,
+      "visibility": null,
+      "enablement": null,
+      "obligation": null,
+      "readonly": true,
+      "selectionPaginated": true,
+      "validators": null
+    },
+    {
+      "sorted": true,
+      "caption": "Проверен",
+      "type": 4,
+      "property": "verify",
+      "size": null,
+      "maskName": null,
+      "mask": null,
+      "mode": null,
+      "fields": [],
+      "columns": [],
+      "actions": null,
+      "orderNumber": 1010,
+      "required": false,
+      "visibility": null,
+      "enablement": null,
+      "obligation": null,
+      "readonly": false,
+      "selectionPaginated": true,
+      "validators": null
+    }
+  ],
+  "actions": null,
+  "commands": [
+    {
+      "isBulk": true,
+      "id": "DELETE",
+      "caption": "Удалить",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false
+    },
+    {
+      "isBulk": false,
+      "id": "EDIT",
+      "caption": "Изменить",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": true,
+      "signBefore": false,
+      "signAfter": false
+    },
+    {
+      "isBulk": false,
+      "id": "CREATE",
+      "caption": "Создать",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false
+    }
+  ],
+  "allowSearch": false,
+  "pageSize": null,
+  "useEditModels": true,
+  "overrideMode": 1,
+  "metaVersion": "2.0.0"
+}

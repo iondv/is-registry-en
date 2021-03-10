@@ -1,0 +1,15 @@
+{
+  "code": "specialObject",
+  "type": 0,
+  "caption": "Связанные объекты с ИС",
+  "tooltip": "Объекты учета привязанные к информационной системе",
+  "classname": null,
+  "orderNumber": 30,
+  "container": null,
+  "collection": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "title": "",
+  "metaVersion": "2.0.0"
+}

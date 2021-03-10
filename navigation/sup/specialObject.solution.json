@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.solution",
+  "orderNumber": 170,
+  "type": 1,
+  "title": "",
+  "caption": "Решения и сведения о системе",
+  "classname": "solution",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

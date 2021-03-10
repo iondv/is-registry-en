@@ -1,0 +1,16 @@
+{
+  "code": "spravochniki.appInterface",
+  "orderNumber": 60,
+  "type": 1,
+  "title": "",
+  "caption": "Назначение сервисов",
+  "classname": "appInterface",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

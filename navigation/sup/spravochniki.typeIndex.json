@@ -1,0 +1,16 @@
+{
+  "code": "spravochniki.typeIndex",
+  "orderNumber": 145,
+  "type": 1,
+  "title": "",
+  "caption": "Справочник показателей функциональных характеристик",
+  "classname": "typeIndex",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.7"
+}

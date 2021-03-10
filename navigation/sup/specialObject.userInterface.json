@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.userInterface",
+  "orderNumber": 120,
+  "type": 1,
+  "title": "",
+  "caption": "Пользовательские интерфейсы",
+  "classname": "userInterface",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

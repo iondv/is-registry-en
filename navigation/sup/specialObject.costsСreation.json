@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.costsСreation",
+  "orderNumber": 30,
+  "type": 1,
+  "title": "",
+  "caption": "Затраты на создание и модернизацию",
+  "classname": "costsСreation",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

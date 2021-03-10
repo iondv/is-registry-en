@@ -1,0 +1,15 @@
+{
+  "code": "spravochniki",
+  "type": 0,
+  "caption": "Справочники",
+  "tooltip": "Справочники и классификаторы",
+  "classname": null,
+  "orderNumber": 40,
+  "container": null,
+  "collection": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "title": "",
+  "metaVersion": "2.0.0"
+}

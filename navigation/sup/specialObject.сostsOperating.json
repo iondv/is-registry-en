@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.сostsOperating",
+  "orderNumber": 40,
+  "type": 1,
+  "title": "",
+  "caption": "Затраты на эксплуатацию",
+  "classname": "сostsOperating",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

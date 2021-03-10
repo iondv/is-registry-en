@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.characteristics",
+  "orderNumber": 200,
+  "type": 1,
+  "title": "",
+  "caption": "Характеристики ИС",
+  "classname": "characteristics",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

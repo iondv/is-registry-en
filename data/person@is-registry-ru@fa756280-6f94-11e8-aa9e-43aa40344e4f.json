@@ -1,0 +1,15 @@
+{
+  "responsibility": "c032c740-e3e5-11e9-9ba6-51fc67012bf0",
+  "familia": "Петрова",
+  "imya": "Екатерина",
+  "otchestvo": "Петровна",
+  "user": "user@local",
+  "id": "fa756280-6f94-11e8-aa9e-43aa40344e4f",
+  "verify": false,
+  "_class": "person@is-registry-ru",
+  "_classVer": "20160916",
+  "_creator": "admin@local",
+  "organization": "000011004400",
+  "_editor": "admin@local",
+  "___workflowStatus": {}
+}

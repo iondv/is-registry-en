@@ -1,0 +1,14 @@
+{
+  "code": "gk",
+  "type": 1,
+  "caption": "Контракты (договора)",
+  "classname": "gk",
+  "orderNumber": 20,
+  "container": null,
+  "collection": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "title": "",
+  "metaVersion": "2.0.0"
+}

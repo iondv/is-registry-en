@@ -1,0 +1,13 @@
+{
+  "code": "spravochniki.adress",
+  "type": 1,
+  "caption": "Адреса",
+  "classname": "adress",
+  "container": null,
+  "collection": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "title": "",
+  "metaVersion": "2.0.0"
+}

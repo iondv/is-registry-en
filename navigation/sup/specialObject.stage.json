@@ -1,0 +1,16 @@
+{
+  "code": "specialObject.etap",
+  "orderNumber": 210,
+  "type": 1,
+  "title": "",
+  "caption": "Этапы ГК",
+  "classname": "stage",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}

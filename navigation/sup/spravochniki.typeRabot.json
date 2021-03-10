@@ -1,0 +1,16 @@
+{
+  "code": "spravochniki.typeRabot",
+  "orderNumber": 190,
+  "type": 1,
+  "title": "",
+  "caption": "Типы работ",
+  "classname": "typeRabot",
+  "container": null,
+  "collection": null,
+  "url": null,
+  "hint": null,
+  "conditions": [],
+  "sorting": [],
+  "pathChains": [],
+  "metaVersion": "2.0.0"
+}
