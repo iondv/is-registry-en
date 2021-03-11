@@ -175,7 +175,7 @@
             },
             {
               "sorted": true,
-              "caption": "Ответственный орган [15]",
+              "caption": "Ответственный орган",
               "type": 2,
               "property": "ownerOrg",
               "size": 2,
@@ -255,7 +255,38 @@
           "fields": [],
           "columns": [],
           "actions": null,
-          "commands": [],
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Создать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Править",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "REMOVE",
+              "caption": "Убрать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
           "orderNumber": 15,
           "required": false,
           "visibility": null,

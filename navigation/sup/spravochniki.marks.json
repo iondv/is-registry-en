@@ -3,7 +3,7 @@
   "orderNumber": 50,
   "type": 1,
   "title": "",
-  "caption": "Метки тикета",
+  "caption": "Метки задачи",
   "classname": "marks",
   "container": null,
   "collection": null,

@@ -1,6 +1,6 @@
 {
   "parametrised": true,
-  "namespace": "is-registry-ru",
+  "namespace": "is-registry-en",
   "globals": {
     "moduleTitles": {
       "registry": "Система управления проектами",
@@ -23,14 +23,14 @@
           "accessManager": "ion://roleAccessManager",
           "calculator": "ion://calculator",
           "map": {
-            "person@is-registry-ru": {
+            "person@is-registry-en": {
               "isEntry": true,
               "sidAttribute": "user",
               "jumps": [
                 "employee"
               ]
             },
-            "employee@is-registry-ru": {
+            "employee@is-registry-en": {
               "sidAttribute": "id",
               "jumps": [
                 "organization",
@@ -38,7 +38,7 @@
                 "assistant"
               ]
             },
-            "organization@is-registry-ru": {
+            "organization@is-registry-en": {
               "sidAttribute": "INN",
               "jumps": [
                 "headOrg"
@@ -103,7 +103,7 @@
             }
           },
           "propertyMap": {
-            "person@is-registry-ru": {
+            "person@is-registry-en": {
               "filter": "user",
               "properties": {
                 "person": "id",
@@ -112,7 +112,7 @@
                 "patronymic": "patronymic"
               }
             },
-            "employee@is-registry-ru": {
+            "employee@is-registry-en": {
               "filter": "person.user",
               "properties": {
                 "employee": "id",
@@ -133,11 +133,11 @@
         "options": {
           "accessManager": "ion://roleAccessManager",
           "roleMap": {
-            "informationSystem@is-registry-ru": {
+            "informationSystem@is-registry-en": {
               "IS_OWNER": {
                 "caption": "Сотрудники организации",
                 "resource": {
-                  "id": "is-registry-ru::is"
+                  "id": "is-registry-en::is"
                 },
                 "sids": [
                   "$operator",
@@ -161,7 +161,7 @@
             "initMethod": "init",
             "initLevel": 0,
             "options": { 
-              "tplDir": "applications/is-registry-ru/export/list",
+              "tplDir": "applications/is-registry-en/export/list",
               "injectors": []
             }
           },
@@ -170,14 +170,14 @@
             "initMethod": "init",
             "initLevel": 0,
             "options": { 
-              "tplDir": "applications/is-registry-ru/export/item",
+              "tplDir": "applications/is-registry-en/export/item",
               "injectors": []
             }
           },
           "export": {
             "options": {
               "configs": {
-                "informationSystem@is-registry-ru": {
+                "informationSystem@is-registry-en": {
                   "listIs": {
                     "caption": "Список информационных систем",
                     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -212,16 +212,12 @@
           }                   
         },
         "storage": {
-          "document@is-registry-ru": {
+          "document@is-registry-en": {
             "file": "/${class}/example_${attr}/${dddd}/"
           },
-          "gk@is-registry-ru": {
+          "gk@is-registry-en": {
             "fileZ": "/${class}/example_${attr}/${dddd}/",
             "fileEx": "/${class}/example_${attr}/${dddd}/"
-          },
-          "zakupka@is-registry-ru": {
-            "docZakupki": "/${class}/example_${attr}/${dddd}/",
-            "docProtocol": "/${class}/example_${attr}/${dddd}/"
           }
         }
       }
@@ -229,15 +225,15 @@
     "report": {
       "globals": {
         "namespaces": {
-          "is-registry-ru": "Система управления проектами"
+          "is-registry-en": "Система управления проектами"
         },
         "defaultNav": {
-          "namespace": "is-registry-ru",
+          "namespace": "is-registry-en",
           "mine": "classInfoSystem",
           "report": "classificationIS"
         },
         "mineBuilders": {
-          "is-registry-ru": {
+          "is-registry-en": {
             "classification": {
               "infoSystem": "mineBuilder",
               "classInfoSystem": "mineBuilder"
@@ -246,8 +242,8 @@
         }
       },
       "import": {
-        "src": "applications/is-registry-ru/bi",
-        "namespace": "is-registry-ru"
+        "src": "applications/is-registry-en/bi",
+        "namespace": "is-registry-en"
       }
     },
     "ionadmin": {

@@ -5,7 +5,7 @@
       "fullFields": [
         {
           "caption": "Контракт (договор)",
-          "type": 2,
+          "type": 5,
           "property": "gk",
           "size": null,
           "maskName": null,
@@ -23,7 +23,38 @@
           "selectionPaginated": true,
           "validators": null,
           "hierarchyAttributes": null,
-          "commands": null,
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Создать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Править",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "REMOVE",
+              "caption": "Убрать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
           "hint": "",
           "historyDisplayMode": 0,
           "tags": null
@@ -80,7 +111,7 @@
         },
         {
           "caption": "Тип работ по этапу",
-          "type": 2,
+          "type": 5,
           "property": "type",
           "size": null,
           "maskName": null,
@@ -98,7 +129,38 @@
           "selectionPaginated": true,
           "validators": null,
           "hierarchyAttributes": null,
-          "commands": null,
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Создать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Править",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "REMOVE",
+              "caption": "Убрать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
           "hint": "",
           "historyDisplayMode": 0,
           "tags": null

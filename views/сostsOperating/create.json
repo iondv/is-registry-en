@@ -5,7 +5,7 @@
       "fullFields": [
         {
           "caption": "Наименование ИС",
-          "type": 2,
+          "type": 5,
           "property": "informationSystem",
           "size": null,
           "maskName": null,
@@ -14,7 +14,38 @@
           "fields": [],
           "columns": [],
           "actions": null,
-          "commands": null,
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Создать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Править",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "REMOVE",
+              "caption": "Убрать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
           "orderNumber": 70,
           "required": true,
           "visibility": null,
@@ -83,7 +114,7 @@
         },
         {
           "caption": "Государственный контракт",
-          "type": 2,
+          "type": 5,
           "property": "gk",
           "size": null,
           "maskName": null,
@@ -92,7 +123,38 @@
           "fields": [],
           "columns": [],
           "actions": null,
-          "commands": null,
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Создать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Править",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "REMOVE",
+              "caption": "Убрать",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
           "orderNumber": 41,
           "required": false,
           "visibility": null,
@@ -176,32 +238,6 @@
           "commands": null,
           "orderNumber": 45,
           "required": true,
-          "visibility": null,
-          "enablement": null,
-          "obligation": null,
-          "readonly": false,
-          "selectionPaginated": true,
-          "validators": null,
-          "hint": "",
-          "historyDisplayMode": 0,
-          "tags": null,
-          "selConditions": null,
-          "selSorting": null
-        },
-        {
-          "caption": "Ответственный орган",
-          "type": 2,
-          "property": "ownerOrg",
-          "size": null,
-          "maskName": null,
-          "mask": null,
-          "mode": 1,
-          "fields": [],
-          "columns": [],
-          "actions": null,
-          "commands": null,
-          "orderNumber": 55,
-          "required": false,
           "visibility": null,
           "enablement": null,
           "obligation": null,

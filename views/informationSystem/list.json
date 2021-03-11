@@ -22,7 +22,7 @@
       "readonly": true,
       "selectionPaginated": true,
       "validators": null,
-      "hint": "Номер присваивается после регистрации объекта учета проверяющим органом",
+      "hint": null,
       "historyDisplayMode": 0,
       "tags": null
     },

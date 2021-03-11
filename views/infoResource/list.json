@@ -74,7 +74,7 @@
       "readonly": false,
       "selectionPaginated": true,
       "validators": null,
-      "hint": "Сведения заполняются с начала жизненного цикла ИС",
+      "hint": null,
       "historyDisplayMode": 0,
       "tags": null
     },

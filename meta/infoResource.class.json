@@ -116,7 +116,7 @@
       "indexed": false,
       "unique": false,
       "autoassigned": false,
-      "hint": "Сведения заполняются с начала жизненного цикла ИС",
+      "hint": null,
       "defaultValue": null,
       "refClass": "",
       "itemsClass": "infoResourceRecords",

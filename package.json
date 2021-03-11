@@ -1,14 +1,14 @@
 {
-  "name": "is-registry-ru",
+  "name": "is-registry-en",
   "description": "Система управления проектами ХК",
   "version": "2.0.0",
-  "homepage": "http://is-registry-ru.iondv.com/",
+  "homepage": "http://is-registry-en.iondv.com/",
   "bugs": {
-    "url": "https://github.com/iondv/is-registry-ru/issues"
+    "url": "https://github.com/iondv/is-registry-en/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iondv/is-registry-ru.git"
+    "url": "https://github.com/iondv/is-registry-en.git"
   },
   "engines": {
     "ion": "3.0.11"
